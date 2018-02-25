@@ -21,7 +21,7 @@ class SwitchAccessory extends BroadlinkRMAccessory {
     const { config, debug, log } = this;
     let { pingIPAddress } = config;
 
-    const pingFrequency = 20000;
+    const pingFrequency = 30000;
     
     setInterval(() => {
       ping.sys.probe(pingIPAddress, (active) => {
